@@ -2,11 +2,7 @@ package Werkcollege;
 
 import javafx.scene.paint.Color;
 
-public class Vierkant {
-
-	private double lengteZijde1;
-	private Color achtergrondkleur;
-	private Color omtrekkleur;
+public class Vierkant extends Figuur {
 
 	public Vierkant() {
 		this(1.0, Color.WHITE, Color.BLACK);
@@ -24,22 +20,6 @@ public class Vierkant {
 
 	public void setLengteZijde1(double lengteZijde1) {
 		this.lengteZijde1 = lengteZijde1;
-	}
-
-	public Color getAchtergrondkleur() {
-		return achtergrondkleur;
-	}
-
-	public void setAchtergrondkleur(Color achtergrondkleur) {
-		this.achtergrondkleur = achtergrondkleur;
-	}
-
-	public Color getOmtrekkleur() {
-		return omtrekkleur;
-	}
-
-	public void setOmtrekkleur(Color omtrekkleur) {
-		this.omtrekkleur = omtrekkleur;
 	}
 
 	public double berekenOmtrek() {

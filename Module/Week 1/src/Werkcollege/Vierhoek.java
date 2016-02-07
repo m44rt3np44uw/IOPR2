@@ -2,12 +2,9 @@ package Werkcollege;
 
 import javafx.scene.paint.Color;
 
-public class Vierhoek {
+public class Vierhoek extends Figuur {
 
-	private double lengteZijde1;
 	private double lengteZijde2;
-	private Color achtergrondkleur;
-	private Color omtrekkleur;
 
 	public Vierhoek() {
 		this(1.0, 1.0, Color.WHITE, Color.BLACK);
@@ -34,22 +31,6 @@ public class Vierhoek {
 
 	public void setLengteZijde2(double lengteZijde2) {
 		this.lengteZijde2 = lengteZijde2;
-	}
-
-	public Color getAchtergrondkleur() {
-		return achtergrondkleur;
-	}
-
-	public void setAchtergrondkleur(Color achtergrondkleur) {
-		this.achtergrondkleur = achtergrondkleur;
-	}
-
-	public Color getOmtrekkleur() {
-		return omtrekkleur;
-	}
-
-	public void setOmtrekkleur(Color omtrekkleur) {
-		this.omtrekkleur = omtrekkleur;
 	}
 
 	public double berekenOmtrek() {

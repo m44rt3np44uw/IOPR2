@@ -2,13 +2,10 @@ package Werkcollege;
 
 import javafx.scene.paint.Color;
 
-public class Driehoek {
+public class Driehoek extends Figuur {
 
-	private double lengteZijde1;
 	private double lengteZijde2;
 	private double lengteZijde3;
-	private Color achtergrondkleur;
-	private Color omtrekkleur;
 
 	public Driehoek() {
 		this(1.0, 1.0, 1.0, Color.WHITE, Color.BLACK);
@@ -21,14 +18,6 @@ public class Driehoek {
 		this.setLengteZijde3(lengteZijde3);
 		this.setAchtergrondkleur(achtergrondkleur);
 		this.setOmtrekkleur(omtrekkleur);
-	}
-
-	public double getLengteZijde1() {
-		return lengteZijde1;
-	}
-
-	public void setLengteZijde1(double lengteZijde1) {
-		this.lengteZijde1 = lengteZijde1;
 	}
 
 	public double getLengteZijde2() {
@@ -45,22 +34,6 @@ public class Driehoek {
 
 	public void setLengteZijde3(double lengteZijde3) {
 		this.lengteZijde3 = lengteZijde3;
-	}
-
-	public Color getAchtergrondkleur() {
-		return achtergrondkleur;
-	}
-
-	public void setAchtergrondkleur(Color achtergrondkleur) {
-		this.achtergrondkleur = achtergrondkleur;
-	}
-
-	public Color getOmtrekkleur() {
-		return omtrekkleur;
-	}
-
-	public void setOmtrekkleur(Color omtrekkleur) {
-		this.omtrekkleur = omtrekkleur;
 	}
 
 	public double berekenOmtrek() {
