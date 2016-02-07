@@ -41,7 +41,7 @@ public class Driehoek extends Figuur {
 	}
 
 	public String toString() {
-		return "De zijden hebben lengtes " + this.lengteZijde1 + ", " + this.lengteZijde2 + "en " + this.lengteZijde3 + ", die ervoor zorgen dat de driehoek en omtrek van " + this.berekenOmtrek() + " heeft.";
+		return "De zijden hebben lengtes " + this.lengteZijde1 + ", " + this.lengteZijde2 + " en " + this.lengteZijde3 + ", die ervoor zorgen dat de driehoek en omtrek van " + this.berekenOmtrek() + " heeft.";
 	}
 
 }
