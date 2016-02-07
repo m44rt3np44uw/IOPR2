@@ -11,14 +11,11 @@ public class Driehoek {
 	private Color omtrekkleur;
 
 	public Driehoek() {
-		this.setLengteZijde1(1.0);
-		this.setLengteZijde2(1.0);
-		this.setLengteZijde3(1.0);
-		this.setAchtergrondkleur(Color.WHITE);
-		this.setOmtrekkleur(Color.BLACK);
+		this(1.0, 1.0, 1.0, Color.WHITE, Color.BLACK);
 	}
 
 	public Driehoek(double lengteZijde1, double lengteZijde2, double lengteZijde3, Color achtergrondkleur, Color omtrekkleur) {
+
 		this.setLengteZijde1(lengteZijde1);
 		this.setLengteZijde2(lengteZijde2);
 		this.setLengteZijde3(lengteZijde3);
