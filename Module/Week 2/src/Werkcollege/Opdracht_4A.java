@@ -7,8 +7,8 @@ import javafx.stage.Stage;
 
 public class Opdracht_4A extends Application {
 
-	private Button knop = new Button("knop");
-	private Scene scene = new Scene(knop, 600, 250);
+	private Button button = new Button("OKJ");
+	private Scene scene = new Scene(button, 600, 250);
 
 	@Override
 	public void start(Stage primaryStage) {
