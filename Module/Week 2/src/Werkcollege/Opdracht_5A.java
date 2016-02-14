@@ -12,7 +12,7 @@ import javafx.scene.text.FontPosture;
 import javafx.scene.text.FontWeight;
 import javafx.stage.Stage;
 
-public class Opdracht_5 extends Application {
+public class Opdracht_5A extends Application {
 
 	// Stage 1
 	private StackPane stackPane = new StackPane();
