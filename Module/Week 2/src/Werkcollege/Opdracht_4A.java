@@ -7,11 +7,11 @@ import javafx.stage.Stage;
 
 public class Opdracht_4A extends Application {
 
+	private Button knop = new Button("knop");
+	private Scene scene = new Scene(knop, 600, 250);
+
 	@Override
 	public void start(Stage primaryStage) {
-
-		Button knop = new Button("knop");
-		Scene scene = new Scene(knop, 600, 250);
 
 		primaryStage.setTitle("Mijn eerste scherm");
 		primaryStage.setScene(scene);
