@@ -7,7 +7,7 @@ import javafx.stage.Stage;
 
 public class Opdracht_4A extends Application {
 
-	private Button button = new Button("OKJ");
+	private Button button = new Button("OK!");
 	private Scene scene = new Scene(button, 600, 250);
 
 	@Override
