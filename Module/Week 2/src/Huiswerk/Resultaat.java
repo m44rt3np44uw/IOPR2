@@ -21,9 +21,4 @@ public class Resultaat {
 	public TextField getResultaat() {
 		return resultaat;
 	}
-
-
-	public void setResultaat(TextField resultaat) {
-		this.resultaat = resultaat;
-	}
 }

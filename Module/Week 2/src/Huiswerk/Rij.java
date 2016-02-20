@@ -9,6 +9,7 @@ public class Rij {
 
 	private HBox rij = new HBox(5);
 	private ArrayList<Knop> knoppen = new ArrayList<Knop>();
+	private Resultaat resultaat;
 
 	public Rij(int boven, int rechts, int onder, int links) {
 		this.getRij().setPadding(new Insets(boven, rechts, onder, links));
@@ -18,18 +19,19 @@ public class Rij {
 		for (Knop knop : knoppen) {
 			this.knoppen.add(knop);
 		}
-	}
 
-	public HBox getRij() {
 		for (Knop knop : this.knoppen) {
 			this.rij.getChildren().add(knop.getKnop());
 		}
+	}
 
+	public void voegResultaatToe(Resultaat resultaat) {
+		this.resultaat = resultaat;
+
+		this.rij.getChildren().add(this.resultaat.getResultaat());
+	}
+
+	public HBox getRij() {
 		return this.rij;
 	}
-
-	public void setRij(HBox rij) {
-		this.rij = rij;
-	}
-
 }

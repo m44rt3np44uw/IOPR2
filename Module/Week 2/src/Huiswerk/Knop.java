@@ -26,8 +26,4 @@ public class Knop {
 	public Button getKnop() {
 		return knop;
 	}
-
-	public void setKnop(Button knop) {
-		this.knop = knop;
-	}
 }

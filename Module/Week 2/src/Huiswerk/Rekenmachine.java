@@ -1,15 +1,14 @@
 package Huiswerk;
 
 import javafx.application.Application;
-import javafx.geometry.Insets;
 import javafx.scene.Scene;
-import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 public class Rekenmachine extends Application {
 
 	private static Rij [] rijen = new Rij [] {
+		new Rij(5, 5, 0, 5),
 		new Rij(5, 5, 0, 5),
 		new Rij(5, 5, 0, 5),
 		new Rij(5, 5, 0, 5),
@@ -61,22 +60,14 @@ public class Rekenmachine extends Application {
 		}
 	};
 
-	private VBox vBox        = new VBox();
-	private HBox hBox		 = new HBox(5);
-	private Scene scene      = new Scene(this.vBox, 280, 390);
-	private Resultaat result = new Resultaat();
+	private VBox vBox           = new VBox();
+	private Scene scene         = new Scene(this.vBox, ((Rekenmachine.knoppen[0].length * 50) + ((Rekenmachine.knoppen[0].length + 1) * 5)), ((Rekenmachine.rijen.length * 50) + ((Rekenmachine.rijen.length + 1) * 5)));
+	private Resultaat resultaat = new Resultaat();
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-		this.addResult();
 		this.addLayout();
 		this.setStage(primaryStage);
-	}
-
-	private void addResult() {
-		this.hBox.setPadding(new Insets(5, 5, 0, 5));
-		this.hBox.getChildren().add(this.result.getResultaat());
-		this.vBox.getChildren().add(hBox);
 	}
 
 	private void setStage(Stage primaryStage) {
@@ -88,10 +79,15 @@ public class Rekenmachine extends Application {
 
 	private void addLayout() {
 		for(int y = 0; y < Rekenmachine.rijen.length; y++) {
-			Rij    rij  = rijen[y];
-			Knop[] knop = knoppen[y];
-			rij.voegToeKnop(knop);
-			this.vBox.getChildren().add(rij.getRij());
+
+			if(y == 0) {
+				rijen[y].voegResultaatToe(this.resultaat);
+			} else {
+				Knop[] knoppen = Rekenmachine.knoppen[y - 1];
+				rijen[y].voegToeKnop(knoppen);
+			}
+
+			this.vBox.getChildren().add(rijen[y].getRij());
 		}
 	}
 
