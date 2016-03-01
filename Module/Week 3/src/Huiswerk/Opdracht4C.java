@@ -12,9 +12,10 @@ public class Opdracht4C {
 		allePizzas.add(new QuattroStagionni());
 		allePizzas.add(new Tonno());
 
+		allePizzas.add(new Hawaii());
+
 		for (Pizza pizza : allePizzas) {
-			System.out.println("Pizza: " + pizza.getNaam() + " Kosten: €" + pizza.getPrijs());
+			System.out.println("De pizza " + pizza.getNaam() + " is €" + pizza.getPrijs());
 		}
 	}
-
 }

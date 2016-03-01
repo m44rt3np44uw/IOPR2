@@ -26,6 +26,4 @@ public class QuattroStagionni extends Pizza {
 	public void setPrijs(double prijs) {
 		this.prijs = prijs;
 	}
-
-
 }
