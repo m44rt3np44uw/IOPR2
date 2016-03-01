@@ -5,7 +5,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-public class Opdracht9B {
+public class Opdracht_9B {
 
 	public static void main(String [] args) {
 

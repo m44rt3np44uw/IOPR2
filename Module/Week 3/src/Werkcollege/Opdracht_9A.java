@@ -1,6 +1,6 @@
 package Werkcollege;
 
-public class Opdracht9A {
+public class Opdracht_9A {
 
 	public static void main(String [] args) {
 
