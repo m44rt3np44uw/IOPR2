@@ -2,28 +2,48 @@ package Huiswerk;
 
 public class QuattroStagionni extends Pizza {
 
-	public QuattroStagionni() {
-		this("Quattro Stagionni", 8.75);
-	}
+    public QuattroStagionni() {
+        this("Quattro Stagionni", 8.75);
+    }
 
-	public QuattroStagionni(String naam, double prijs) {
-		this.setNaam(naam);
-		this.setPrijs(prijs);
-	}
+    public QuattroStagionni(String naam, double prijs) {
+        this.setNaam(naam);
+        this.setPrijs(prijs);
+    }
 
-	public String getNaam() {
-		return naam;
-	}
+    public QuattroStagionni(String naam, double prijs, String bezorgAdres) {
+    	this.setNaam(naam);
+    	this.setPrijs(prijs);
+    	this.setBezorgAdres(bezorgAdres);
+    }
 
-	public void setNaam(String naam) {
-		this.naam = naam;
-	}
+    @Override
+    public String getNaam() {
+        return naam;
+    }
 
-	public double getPrijs() {
-		return prijs;
-	}
+    @Override
+    public void setNaam(String naam) {
+        this.naam = naam;
+    }
 
-	public void setPrijs(double prijs) {
-		this.prijs = prijs;
-	}
+    @Override
+    public double getPrijs() {
+        return prijs;
+    }
+
+    @Override
+    public void setPrijs(double prijs) {
+        this.prijs = prijs;
+    }
+
+    @Override
+    public String getBezorgAdres() {
+        return this.bezorgAdres;
+    }
+
+    @Override
+    public void setBezorgAdres(String bezorgAdres) {
+        this.bezorgAdres = bezorgAdres;
+    }
 }
