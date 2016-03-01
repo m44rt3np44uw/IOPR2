@@ -15,7 +15,7 @@ public class Opdracht4C {
 		allePizzas.add(new Hawaii());
 
 		for (Pizza pizza : allePizzas) {
-			System.out.println("De pizza " + pizza.getNaam() + " is €" + pizza.getPrijs());
+			System.out.println("De pizza " + pizza.getNaam() + " is " + pizza.getPrijs() + " euro.");
 		}
 	}
 }
