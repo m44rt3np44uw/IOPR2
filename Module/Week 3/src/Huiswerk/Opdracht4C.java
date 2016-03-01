@@ -14,6 +14,8 @@ public class Opdracht4C {
 
 		allePizzas.add(new Hawaii());
 
+		allePizzas.add(new BigPizza());
+
 		for (Pizza pizza : allePizzas) {
 			System.out.println("De pizza " + pizza.getNaam() + " is " + pizza.getPrijs() + " euro.");
 		}
