@@ -1,14 +1,11 @@
 package Huiswerk;
 
-public class Bolognese {
+public class Bolognese extends Pizza {
 
-	private String naam = "Bolognese";
-	private double prijs = 7.00;
-	
 	public Bolognese() {
-		
+		this("Bolognese", 7.00);
 	}
-	
+
 	public Bolognese(String naam, double prijs) {
 		this.setNaam(naam);
 		this.setPrijs(prijs);
@@ -29,6 +26,6 @@ public class Bolognese {
 	public void setPrijs(double prijs) {
 		this.prijs = prijs;
 	}
-	
-	
+
+
 }

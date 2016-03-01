@@ -1,12 +1,9 @@
 package Huiswerk;
 
-public class QuattroStagionni {
-
-	private String naam = "Quattro Stagionni";
-	private double prijs = 8.75;
+public class QuattroStagionni extends Pizza {
 
 	public QuattroStagionni() {
-
+		this("Quattro Stagionni", 8.75);
 	}
 
 	public QuattroStagionni(String naam, double prijs) {
