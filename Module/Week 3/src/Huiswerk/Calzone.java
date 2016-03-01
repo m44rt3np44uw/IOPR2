@@ -1,6 +1,6 @@
 package Huiswerk;
 
-public class Calzone extends Pizza {
+public class Calzone extends Pizza implements Deliverable {
 
 	public Calzone() {
 		this("Calzone", 6.50);

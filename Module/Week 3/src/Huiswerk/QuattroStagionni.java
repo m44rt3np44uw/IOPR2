@@ -1,6 +1,6 @@
 package Huiswerk;
 
-public class QuattroStagionni extends Pizza {
+public class QuattroStagionni extends Pizza implements Deliverable {
 
     public QuattroStagionni() {
         this("Quattro Stagionni", 8.75);

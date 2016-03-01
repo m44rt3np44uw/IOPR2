@@ -1,6 +1,6 @@
 package Huiswerk;
 
-public class Hawaii extends Pizza {
+public class Hawaii extends Pizza implements Deliverable {
 
 	public Hawaii() {
 		this("Hawaii", 7.00);

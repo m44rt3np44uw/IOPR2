@@ -11,7 +11,4 @@ public abstract class Pizza {
 
 	public abstract double getPrijs();
 	public abstract void setPrijs(double prijs);
-
-	public abstract String getBezorgAdres();
-	public abstract void setBezorgAdres(String bezorgAdres);
 }
