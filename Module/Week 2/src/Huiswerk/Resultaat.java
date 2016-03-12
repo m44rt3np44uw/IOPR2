@@ -13,8 +13,8 @@ public class Resultaat {
 	}
 
 	public void setProperties() {
-		this.getResultaat().setPrefSize(270, 50);
-		this.getResultaat().setAlignment(Pos.CENTER_RIGHT);
+		this.resultaat.setPrefSize(270, 50);
+		this.resultaat.setAlignment(Pos.CENTER_RIGHT);
 	}
 
 
