@@ -18,12 +18,18 @@ public class Knop {
 	}
 
 	private void setProperties() {
-		this.getKnop().setText(this.tekst);
-		this.getKnop().setPrefWidth(this.breedte);
-		this.getKnop().setPrefHeight(this.hoogte);
+		this.knop.setText(this.tekst);
+		this.knop.setPrefWidth(this.breedte);
+		this.knop.setPrefHeight(this.hoogte);
 	}
 
 	public Button getKnop() {
-		return knop;
+		return this.knop;
+	}
+
+	public void event() {
+		this.knop.setOnAction(e -> {
+
+		});
 	}
 }

@@ -12,7 +12,7 @@ public class Rij {
 	private Resultaat resultaat;
 
 	public Rij(int boven, int rechts, int onder, int links) {
-		this.getRij().setPadding(new Insets(boven, rechts, onder, links));
+		this.rij.setPadding(new Insets(boven, rechts, onder, links));
 	}
 
 	public void voegToeKnop(Knop[] knoppen) {
