@@ -13,7 +13,7 @@ public class Bestand extends Stage {
 	private File        file;
 
 	public String openTekstBestand() {
-		 file = this.fileChooser.showOpenDialog(this);
+		file = this.fileChooser.showOpenDialog(this);
 
 		try {
 			this.bestand = file.getCanonicalPath();
