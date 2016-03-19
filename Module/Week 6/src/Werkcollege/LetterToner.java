@@ -14,7 +14,14 @@ public class LetterToner implements Runnable {
 	public void run() {
 
 		for(int i = 0; i < this.getal; i++) {
-			System.out.println((i + 1) + ": " + Character.toUpperCase(this.letter));
+
+			if(i % 10 == 0) {
+				Thread.yield();
+			}
+
+			else {
+				System.out.println((i + 1) + ": " + Character.toUpperCase(this.letter));
+			}
 		}
 	}
 }
