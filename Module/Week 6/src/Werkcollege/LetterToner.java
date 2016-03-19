@@ -19,6 +19,15 @@ public class LetterToner implements Runnable {
 				Thread.yield();
 			}
 
+			if (i % 50 == 0) {
+
+				try {
+					Thread.sleep(3000);
+				}
+
+				catch (InterruptedException e) {}
+			}
+
 			else {
 				System.out.println((i + 1) + ": " + Character.toUpperCase(this.letter));
 			}
