@@ -4,10 +4,11 @@ import javafx.scene.control.TextField;
 
 public class Teller implements Runnable {
 
-	private TextField input;
-	private int       getal;
-	private boolean   draaiend = false;
-	private String    titel;
+	private       TextField input;
+	private       int       getal;
+	private       String    titel;
+	private       boolean   draaiend = false;
+	private final Object    LOCK     = new Object();
 
 	public Teller(String titel, TextField input, int getal) {
 		this.titel = titel;
@@ -22,12 +23,12 @@ public class Teller implements Runnable {
 
 		while(true) {
 
-			synchronized (this) {
+			synchronized (this.LOCK) {
 
 				if(!isDraaiend()) {
 
 					try {
-						this.wait();
+						this.LOCK.wait();
 					}
 
 					catch(InterruptedException e) {}
@@ -52,16 +53,16 @@ public class Teller implements Runnable {
 	}
 
 	public void start() {
-		synchronized (this) {
+		synchronized (this.LOCK) {
 			this.draaiend = true;
-			this.notifyAll();
+			this.LOCK.notifyAll();
 		}
 	}
 
 	public void stop() {
-		synchronized (this) {
+		synchronized (this.LOCK) {
 			this.draaiend = false;
-			this.notifyAll();
+			this.LOCK.notifyAll();
 		}
 	}
 
